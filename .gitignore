@@ -1,0 +1,52 @@
+# ==============================================================================
+# Git Ignore - KPI Benchmark & Trial Analysis Tool
+# ==============================================================================
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# PyInstaller Build Artifacts & Large Binaries
+build/
+dist/
+KPI_Benchmark_App/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Application Logs & Diagnostics
+*.log
+kpi_tool_debug.log
+
+# Confidential Customer & Operator Data
+# Only synthetic sample dataset is tracked for testing and demonstrations
+data/*
+!data/sample_network_kpis.csv
+!data/README.md
+
+# Corporate PowerPoint Templates
+# Keep instructions, exclude proprietary company .pptx/.potx master files
+templates/*.pptx
+templates/*.potx
+!templates/README.md
+
+# Generated Presentation Output
+output/*
+!output/.gitkeep
+
+# IDE, OS & System Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
